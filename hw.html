@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    header{
+        text-align: right;
+    }
+    body{
+        background-image:linear-gradient(to bottom right,rgb(217, 235, 135),ivory);
+        background-repeat: no-repeat;
+        height:700px;
+
+    }
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-gap:20px 0px;
+        width:300px;
+        height:300px;
+        padding:50px;
+        margin:auto;
+        
+    }
+    .grid-container>div{
+        background-image:url("map.jpg");
+        background-color:white;
+        text-align:center;
+        padding:20px 0px;
+        font-size:15px;
+    }
+    .item{
+        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+        grid-row-start:2;
+        grid-row-end:3;
+        grid-column-start:2;
+        grid-column-end:3;
+        border-radius: 25px;
+        background:white;
+        padding: 30px; 
+        width: 400px;
+        height: 300px; 
+        
+    }
+    .introduction h1{
+        width:350px;
+        grid-row-start:1;
+        grid-row-end:2;
+        grid-column-start:1;
+        grid-column-end:2;
+        text-align:center;
+        font-size:10px;
+        font-weight:lighter;
+        color:black;
+    }
+
+</style>
+</head>
+
+<body>
+    <header>최유리</header>
+    <form action="전송받을 대상">
+            아이디 : <input type="text">
+            비밀번호 : <input type="password">           
+            <input type="submit" class="btn btn-primary">
+    </form><br>
+    <div class="introduction">
+        <h1 style="font-size:15px">인하대학교 전자공학과 15학번 최유리입니다:D</h1>
+    <div class="grid-container">
+        <div class="item">
+            <h2 style="font-weight:ighter;">카드 분실에 지쳤는가?!</h2>
+            <p><strong style="color:rgb(130, 74, 0);font-size: 30px; font-weight:bold">내</strong>
+            손으로 내<strong style="color:rgb(130, 74, 0);font-size: 30px;font-weight:bold;">카드
+            </strong>지킨<strong style="color:rgb(130, 74, 0);font-size: 30px;font-weight:bold;">다</strong></p>
+            <h1 style="text-align:center;"><strong style="letter-spacing:6px;font-size:50px;">내카드다</strong></h1>
+        </div>
+    </div>
+
+</body>
+</html>
